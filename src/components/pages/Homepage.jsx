@@ -33,7 +33,7 @@ function Homepage() {
   return (
     <div className="homepage">
       <LeafAnimation />
-      <div className="heroPage container mb-12 lg:mb-16 section mt-24 lg:mt-20    " id="home">
+      <div className="heroPage bg-[#E7E4E461] container mb-12 lg:mb-16 section mt-24 lg:mt-20    " id="home">
         <Hero />
       </div>
       <div className="container section" id="service">
