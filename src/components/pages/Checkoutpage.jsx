@@ -26,7 +26,7 @@ function Checkoutpage() {
                   {
                     
                     cart.map((carts) => (
-                      <div className="rounded-lg border   p-4 shadow-sm dark:border-gray-700 bg-[#e7e4e4db] text-green-900 md:p-6">
+                      <div className="rounded-lg border   p-4 shadow-sm dark:border-gray-700 bg-[#e7e4e4a5] text-green-900 md:p-6">
                         <div className="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
                           <a href="#" className="shrink-0 md:order-1">
                             <img className="hidden h-20 w-20 dark:block" src={carts.images} alt="imac image" />
@@ -71,7 +71,7 @@ function Checkoutpage() {
 
               <div className="mx-auto mt-6 max-w-4xl flex-1 space-y-6 lg:mt-0 lg:w-full">
                 <div className="space-y-4 rounded-lg border  p-4 shadow-sm dark:border-gray-700 dark:bg-green-800 sm:p-6">
-                  <p className="text-xl font-semibold text-gray-900 ">Order summary</p>
+                  <p className="text-xl font-semibold text-white ">Order summary</p>
 
                   <div className="space-y-4">
                     <div className="space-y-2">
@@ -112,7 +112,7 @@ function Checkoutpage() {
         </section>
 
       </div>
-            : <div className='h-screen flex flex-col justify-center items-center text-[#196039] container '>
+            : <div className='h-screen flex flex-col justify-center items-center text-[#eeeeee] container '>
             <h2 className='lg:text-base text-[15px] text-center'>"Your cart is empty. Start adding your favorite items!"</h2>
             <div className="flex items-center justify-center gap-2">
                     <a href="#" title="" className="inline-flex items-center gap-2  font-medium no-underline text-[13px]  hover:no-underline " onClick={() => navigate("/")}>

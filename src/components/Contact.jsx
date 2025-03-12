@@ -28,7 +28,7 @@ function Contact() {
     <div>
       <div className="max-w-screen-lg mx-auto mt-4 lg-mt-5">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-2  py-4 px-6">
-          <div className="contactside md:col-span-4 p-10 text-white">
+          <div className="md:col-span-4 p-10 text-white lg:mb-0 mb-[10px] bg-[#196039] rounded-[10px]">
             <p className="mt-4 text-sm leading-7 font-regular uppercase">
               Contact
             </p>
@@ -180,7 +180,7 @@ function Contact() {
             </div>
             <div className="flex justify-between w-full px-3">
               <button
-                className="shadow bg-blue-500  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="shadow bg-green-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
                 Send Message

@@ -31,7 +31,7 @@ function Homepage() {
   }, []);
 
   return (
-    <div className="homepage">
+    <div className="homepage font-medium not-italic text-[#1a6c3f]">
       <LeafAnimation />
       <div className="heroPage bg-[#E7E4E461] container mb-12 lg:mb-16 section mt-24 lg:mt-20    " id="home">
         <Hero />

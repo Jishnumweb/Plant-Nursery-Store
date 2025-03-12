@@ -44,13 +44,12 @@ function Productpage() {
                         <p className='lg:text-[15px] text-[10px] mb-4'>{item.description}</p>
                         <h6 className=' text-[11px] lg:text-base mb-3'>care level : {item.careLevel}</h6>
                         <div className="flex items-center gap-[10px] mb-5">
-                            {
-                                cart.some((carts)=>carts.id === item.id) ? <button class="menu__buttonss " onClick={()=>dispatch(removecart(item.id))}>
-                                <span>Remove cart</span>
-                            </button> :                             <button class="menu__button " onClick={()=>dispatch(increment(item))}>
-                                <span>Add to cart</span>
-                            </button>
-                            }
+                        {
+                            cart.some((carts) => carts.id === item.id) ?
+                                <button className="ui-btn" onClick={() => dispatch(removecart(item.id))}>Remove</button>
+                                : <button className="uis-btn" onClick={() => dispatch(increment(item))}>Add  cart</button>
+
+                        }
                         </div>
                     </motion.div>
                     <h4 className='mt-4 mb-3 text-[14px]'>Treatments & Facts</h4>

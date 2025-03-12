@@ -6,26 +6,54 @@
 
 .homepage {
   font-family: "Kanit", serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #1a6c3f;
 }
-.herobtn {
-  margin: 0;
-  height: auto;
-  background: transparent;
-  padding: 0;
-  border: none;
+/* From Uiverse.io by hamoode-taha-04 */ 
+.ui-btn {
   cursor: pointer;
+  border-radius: 5px;
+  /* color: rgb(219, 218, 218); */
+  border-style: solid;
+  /* background-color: transparent; */
+  border-color: rgb(219, 218, 218);
+  width: 90px;
+  height: 30px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  border-width: 2px;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgb(247, 247, 247);
+  background-color: rgb(202, 25, 25);
 }
-button {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
+.ui-btn:hover {
+  color: rgb(202, 25, 25);
+  background-color: rgb(255, 255, 255);
+}
+.uis-btn {
   cursor: pointer;
-  font-family: inherit;
+  border-radius: 5px;
+  /* color: rgb(219, 218, 218); */
+  border-style: solid;
+  /* background-color: transparent; */
+  border-color: rgb(219, 218, 218);
+  width: 90px;
+  height: 30px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  border-width: 2px;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgb(247, 247, 247);
+  background-color: rgba(28, 99, 29, 0.836);
 }
+.uis-btn:hover {
+  color: rgb(18, 83, 18);
+  background-color: rgb(255, 255, 255);
+}
+
+
 .menu__button {
   min-width: 50px;
   height: 27px;
@@ -61,6 +89,44 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+/* From Uiverse.io by boryanakrasteva */ 
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #196039dd;
+  border-radius: 13px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.scroll {
+  width: 3px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 9px;
+  animation: move_918 1.5s linear infinite;
+}
+
+@keyframes move_918 {
+  0% {
+    bottom: 9px;
+  }
+
+  50% {
+    bottom: 5px;
+  }
+
+  100% {
+    bottom: 9px;
+  }
+}
 @keyframes animate {
   0% {
     background-position: -500%;
@@ -71,54 +137,6 @@ button {
   100% {
     background-position: -700%;
   }
-}
-.servicemainsub {
-  gap: 10px;
-  padding: 0;
-}
-.catimg {
-  width: 600px;
-  height: 300px;
-  object-fit: cover;
-}
-.reviewcard {
-  display: flex;
-  color: rgb(86, 139, 31);
-  justify-content: center;
-}
-.reviewalign {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 0 20px;
-}
-.reviewbacg {
-  background-color: rgba(237, 237, 237, 0.378);
-  padding: 10px 10px;
-  border-radius: 10px;
-}
-.contactside {
-  background-color: #196039;
-}
-.shadow {
-  background-color: #196039;
-}
-.revvview {
-  margin-bottom: 130px;
-}
-.footerback {
-  background-color: #196039;
-  color: white;
-}
-.pagecontentpro h2 {
-  font-size: 37px;
-  font-weight: 700;
-  color: #196039;
-}
-.pagecontentpro h4 {
-  font-size: 17px;
-}
-.propropage {
-  gap: 20px;
 }
 
 .related {
@@ -230,9 +248,6 @@ button {
   background-color: rgba(231, 228, 228, 0.858);
   border-radius: 10px;
 }
-.contactside {
-  border-radius: 10px;
-}
 .imagecontentpro {
   order: 0;
 }
@@ -269,9 +284,7 @@ button {
   .reviewpagecontents h3 {
     font-size: 18px;
   }
-  .contactside {
-    margin-bottom: 10px;
-  }
+
   .shadow {
     font-size: 10px;
   }
