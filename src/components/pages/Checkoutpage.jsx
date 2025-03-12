@@ -15,7 +15,7 @@ function Checkoutpage() {
     <div>
       {
         cart.length ?
-        <div classNameName="checkoutpage">
+        <div className="checkoutpage">
         <section className="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
           <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
 
@@ -26,7 +26,7 @@ function Checkoutpage() {
                   {
                     
                     cart.map((carts) => (
-                      <div className="rounded-lg border   p-4 shadow-sm dark:border-gray-700 bg-[#e7e4e4a5] text-green-900 md:p-6">
+                      <div className="rounded-lg border   p-4 shadow-sm dark:border-gray-700 bg-[#e7e4e4a5] text-green-900 md:p-6" key={carts.id}>
                         <div className="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
                           <a href="#" className="shrink-0 md:order-1">
                             <img className="hidden h-20 w-20 dark:block" src={carts.images} alt="imac image" />

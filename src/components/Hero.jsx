@@ -8,7 +8,7 @@ function Hero() {
       <div className="row h-[450px] lg:h-auto">
         <motion.div className="col-md-6 flex justify-center"
         >
-          <img src="images/first.png" alt="" className='h-[200px] object-contain mb-[30px] lg:h-[600px]' />
+          <img src="images/first.png" alt="Image" loading="lazy" className='h-[200px] object-contain mb-[30px] lg:h-[600px]' />
         </motion.div>
         <motion.div className="col-md-6 flex flex-col justify-center items-center text-center h-[300px] lg:h-auto"
           initial={{ opacity: 0, x: 100, y: window.innerWidth > 576 ? 0 : -50 }}

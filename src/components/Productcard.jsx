@@ -22,37 +22,37 @@ function Productcard({ item }) {
                     whileInView={{ opacity: 1, y: window.innerWidth > 576 ? -55 : -45 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <img src={item.images} alt="" className='mb-5' />
+                    <img src={item.images}  alt="Image" loading="lazy" className='mb-5' />
                 </motion.div>
-                <div className="absolute lg:bottom-[20px] lg:left-[50px] bottom-[20px] left-[17px] flex flex-col justify-center items-center text-center">
+                <div className="absolute  lg:bottom-[20px] lg:left-[50px] bottom-[20px] left-[10px] flex flex-col justify-center items-center text-center">
                     <p className='mb-2'>{item.name} </p>
-                    <div className="flex lg:gap-[10px] gap-[5px] lg:text-base text-[10px] mt-2 ">
+                    <div className="flex lg:gap-[10px] gap-[5px]  lg:text-base text-[10px] mt-2 ">
                         <button onClick={() => navigate("/product", { state: { item } })}
-                            class="cursor-pointer group relative  hover:bg-zinc-300  text-[13px]   transition-all duration-200 ease-in-out shadow hover:shadow-lg w-28 h-7"
+                            className="cursor-pointer group relative  hover:bg-zinc-300  text-[13px]   transition-all duration-200 ease-in-out shadow hover:shadow-lg lg:w-28 lg:h-7 w-20"
                         >
-                            <div class="relative flex items-center justify-center gap-2">
-                                <span class="relative inline-block overflow-hidden">
+                            <div className="relative flex items-center justify-center gap-2">
+                                <span className="relative inline-block overflow-hidden">
                                     <span
-                                        class="block transition-transform duration-300 group-hover:-translate-y-full"
+                                        className="block transition-transform duration-300 group-hover:-translate-y-full"
                                     >
                                          Details
                                     </span>
                                     <span
-                                        class="absolute inset-0 transition-transform duration-300 translate-y-full group-hover:translate-y-0"
+                                        className="absolute inset-0 transition-transform duration-300 translate-y-full group-hover:translate-y-0"
                                     >
                                         Explore
                                     </span>
                                 </span>
 
                                 <svg
-                                    class="w-4 h-4 transition-transform duration-200 group-hover:rotate-45"
+                                    className="w-4 h-4 transition-transform duration-200 group-hover:rotate-45"
                                     viewBox="0 0 24 24"
                                 >
                                     <circle fill="currentColor" r="11" cy="12" cx="12"></circle>
                                     <path
-                                        stroke-linejoin="round"
-                                        stroke-linecap="round"
-                                        stroke-width="2"
+                                        strokeLinejoin="round"
+                                        strokeLinecap="round"
+                                        strokeWidth="2"
                                         stroke="white"
                                         d="M7.5 16.5L16.5 7.5M16.5 7.5H10.5M16.5 7.5V13.5"
                                     ></path>

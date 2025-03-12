@@ -9,8 +9,8 @@ function Category() {
                     <div className="flex flex-col justify-center items-center lg:ml-[30px] text-center ml-[10px]">
                         <h2 className='text-[12px] lg:text-base'>Indoor Plants</h2>
                         <p className='text-[10px] lg:text-base'>Freshen up your space with easy-care indoor plants that purify the air and add a natural touch</p>
-                        <button class="mouse">
-                            <div class="scroll"></div>
+                        <button className="mouse">
+                            <div className="scroll"></div>
 
                         </button>
                     </div>
@@ -28,8 +28,8 @@ function Category() {
                     <div className="flex flex-col justify-center items-center lg:ml-[30px] text-center ml-[10px]">
                         <h2 className='text-[12px] lg:text-base'>Outdoor Plants</h2>
                         <p className='text-[10px] lg:text-base'>Freshen up your space with easy-care indoor plants that purify the air and add a natural touch</p>
-                        <button class="mouse">
-                            <div class="scroll"></div>
+                        <button className="mouse">
+                            <div className="scroll"></div>
 
                         </button>
                     </div>

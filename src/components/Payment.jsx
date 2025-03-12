@@ -1,65 +1,51 @@
-import { useDispatch } from "react-redux";
-import { emptyCart } from "../redux/Features/Cartslice";
+
+
+import { useNavigate } from "react-router-dom";
 
 export default function Payment() {
 
-  const goToHome = () => {
-    window.location.href = "/"; // Redirect to home
-  };
 
-  const dispatch = useDispatch()
+
+  const navigate = useNavigate()
 
   return (
-  
-      <div style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center"
-      }}>
-        <div style={{
-          background: "white",
-          padding: "20px",
-          borderRadius: "10px",
-          textAlign: "center",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
-        }}>
+
+    <div role="alert" className="rounded-xl border flex flex-col justify-center items-center h-screen container">
+      <div className="flex justify-center items-center gap-4">
+        <span className="text-green-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
-            fill="green"
-            viewBox="0 0 16 16"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-6"
           >
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.97 11.03a.75.75 0 0 0 1.06 0l4.5-4.5a.75.75 0 0 0-1.06-1.06L7.5 9.44 5.53 7.47a.75.75 0 0 0-1.06 1.06l2.5 2.5z"/>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
           </svg>
-          <h2 style={{ marginTop: "10px", fontSize: "18px", fontWeight: "bold" }}>Payment Successful!</h2>
-          <p style={{ color: "gray", marginTop: "5px" }}>Thank you for your purchase.</p>
-          <div style={{ marginTop: "15px", display: "flex", gap: "10px", justifyContent: "center" }}>
+        </span>
 
-            <button
-              onClick={()=>{
-                dispatch(emptyCart());
-                goToHome()
-              }}
-              style={{
-                padding: "8px 16px",
-                background: "green",
-                color: "white",
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer"
-              }}
-            >
-              Go to Home
-            </button>
-          </div>
+        <div className="">
+          <strong className="block font-medium text-gray-900">Order Completed!</strong>
+
+          <p className="mt-1 text-sm text-gray-700">Thank you for your order. We have received your request and will process it shortly. You will receive updates via email/SMS.</p>
         </div>
+
+
+
       </div>
+      <div className="flex items-center justify-center gap-2 mt-3">
+          <a href="#" title="" className="inline-flex items-center gap-2 text-sm font-medium no-underline  hover:no-underline " onClick={() => navigate("/")}>
+            Continue Shopping
+            <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+            </svg>
+          </a>
+        </div>
+    </div>
   );
 }

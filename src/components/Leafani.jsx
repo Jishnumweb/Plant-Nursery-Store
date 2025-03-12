@@ -17,7 +17,7 @@ const LeafAnimation = () => {
           }
         });
       },
-      { threshold: 0.6 }
+      { threshold: 0.4 }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -43,7 +43,7 @@ const LeafAnimation = () => {
       contactss: { top: "55%", left: "40%", scale: 1.5, rotate: "00deg", height: "60px",zIndex:-1 },
       productss: { top: "55%", left: "50%", scale: 1.5, rotate: "90deg", height: "60px" },
       productsss: { top: "85%", left: "40%", scale: 1.5, rotate: "45deg", height: "60px" },
-      footer: { top: "557px", left: "200px", scale: 1.5, rotate: "-10deg", height: "10px" },
+      footer: { top: "188vw", left: "205px", scale: 1.5, rotate: "-10deg", height: "10px" },
       }
     : {
       home: { top: "28%", left: "30%", scale: 1, rotate: "-10deg"},

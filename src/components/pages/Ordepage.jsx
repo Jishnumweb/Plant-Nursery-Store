@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { emptyCart } from '../../redux/Features/Cartslice';
+import Payment from '../Payment';
 // import Payment from '../Payment';
 
 function OrderPage() {
@@ -21,6 +22,7 @@ function OrderPage() {
         card:""
 
     })
+    const [show,setShow]=useState(false)
 
     // const [isOpen,setIsopen]= useState(false)
 
@@ -37,16 +39,18 @@ function OrderPage() {
             setError("All fields are required")
             return;
         }
-        alert("order completed")
+        // alert("order completed")
+        setShow(!show)
         dispatch(emptyCart())
-        navigate("/")
+        // navigate("/")
         
 
     }
 
     return (
         <div>
-            <div className="leading-loose h-screen flex justify-center items-center">
+            {
+                show ? <Payment/> :             <div className="leading-loose h-screen flex justify-center items-center">
                 <form className="max-w-xl m-4 p-10 bg-white rounded shadow-xl">
                     <p className="text-gray-800 font-medium">Customer information</p>
 
@@ -108,14 +112,11 @@ function OrderPage() {
                       </svg>
                     </a>
                   </div>
-                  {/* {
-                    isOpen ?<div>
-                    <Payment/>
-                  </div> : <div>pay</div>
-                  } */}
 
                 </form>
             </div>
+            }
+
         </div>
     );
 }

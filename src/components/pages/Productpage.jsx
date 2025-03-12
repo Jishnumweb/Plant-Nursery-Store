@@ -76,17 +76,17 @@ function Productpage() {
                     whileInView={{ opacity: 1, y: window.innerWidth > 576 ? -45 : -45 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <img src={image} alt="" className='object-contain p-[0px_50px] h-[200px] lg:h-[500px]' />
+                    <img src={image} alt="Image" loading="lazy"className='object-contain p-[0px_50px] h-[200px] lg:h-[500px]' />
 
                     <div className="flex justify-center items-center gap-[10px] lg:mt-0 mt-4">
                         <div className="h-[100px]" onClick={() => handleImage(item.images)}>
-                            <img src={item.images} alt="" className='h-[100px] object-contain' />
+                            <img src={item.images} alt="Image" loading="lazy" className='h-[100px] object-contain' />
                         </div>
                         <div className="h-[100px]" onClick={() => handleImage(item.image2,"#D2FBA4")}>
-                            <img src={item.image2} alt="" className='h-[100px] object-contain' />
+                            <img src={item.image2} alt="Image" loading="lazy" className='h-[100px] object-contain' />
                         </div>
                         <div className="h-[100px]" onClick={() => handleImage(item.image3,"#ECF87F")}>
-                            <img src={item.image3} alt="" className='h-[100px] object-contain' />
+                            <img src={item.image3} alt="Image" loading="lazy" className='h-[100px] object-contain' />
                         </div>
                     </div>
                 </motion.div>

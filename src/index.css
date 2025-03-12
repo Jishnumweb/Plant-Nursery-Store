@@ -255,6 +255,53 @@
   .heroContents {
     height: 300px;
   }
+  
+  .ui-btn {
+    cursor: pointer;
+    border-radius: 5px;
+    /* color: rgb(219, 218, 218); */
+    border-style: solid;
+    /* background-color: transparent; */
+    border-color: rgb(219, 218, 218);
+    width: 65px;
+    height: 25px;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    border-width: 2px;
+    font-weight: 500;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: rgb(247, 247, 247);
+    background-color: rgb(202, 25, 25);
+  }
+  .ui-btn:hover {
+    color: rgb(202, 25, 25);
+    background-color: rgb(255, 255, 255);
+  }
+  .uis-btn {
+    cursor: pointer;
+    border-radius: 5px;
+    /* color: rgb(219, 218, 218); */
+    border-style: solid;
+    /* background-color: transparent; */
+    border-color: rgb(219, 218, 218);
+    width: 65px;
+    height: 25px;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    border-width: 2px;
+    font-weight: 500;
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: rgb(247, 247, 247);
+    background-color: rgba(28, 99, 29, 0.836);
+  }
+  .uis-btn:hover {
+    color: rgb(18, 83, 18);
+    background-color: rgb(255, 255, 255);
+  }
+
+
   .servicesub p {
     font-size: 9px;
     color: #1960396e;

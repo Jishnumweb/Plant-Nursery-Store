@@ -17,8 +17,8 @@ function Ads() {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h3 className='text-[7px] lg:text-base'>Why Choose Bhavya’s Plant Store?</h3>
-                    <p className='mb-0  text-[6px] lg:text-base'>At Bhavya’s Plant Store, we take pride in offering a diverse selection of healthy, well-nurtured plants that bring life to your spaces. Whether you're looking for vibrant flowering plants, easy-to-care-for succulents, or fresh herbs for your kitchen, we have something for every plant lover. Our commitment to quality ensures that each plant is handpicked and cared for with expertise. With affordable pricing, expert guidance, and a passion for greenery, we strive to make plant shopping an enjoyable and fulfilling experience. Visit us and bring home a touch of nature today!motion.</p>
+                    <h3 className='text-[10px] lg:text-base'>Why Choose Bhavya’s Plant Store?</h3>
+                    <p className='mb-0  text-[7px] lg:text-base'>At Bhavya’s Plant Store, we take pride in offering a diverse selection of healthy, well-nurtured plants that bring life to your spaces. Whether you're looking for vibrant flowering plants, easy-to-care-for succulents, or fresh herbs for your kitchen, we have something for every plant lover. Our commitment to quality ensures that each plant is handpicked and cared for with expertise. With affordable pricing, expert guidance, and a passion for greenery, we strive to make plant shopping an enjoyable and fulfilling experience. Visit us and bring home a touch of nature today!motion.</p>
                     <p className='txt text-[6px] lg:text-base'>shop now</p>
                 </motion.div>
             </div>
