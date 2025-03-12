@@ -24,7 +24,7 @@ function Productcard({ item }) {
                 >
                     <img src={item.images}  alt="Image" loading="lazy" className='mb-5' />
                 </motion.div>
-                <div className="absolute  lg:bottom-[20px] lg:left-[50px] bottom-[20px] left-[10px] flex flex-col justify-center items-center text-center">
+                <div className="absolute  lg:bottom-[20px] lg:left-[50px] bottom-[20px] left-[10px] right-[10px] flex flex-col justify-center items-center text-center">
                     <p className='mb-2'>{item.name} </p>
                     <div className="flex lg:gap-[10px] gap-[5px]  lg:text-base text-[10px] mt-2 ">
                         <button onClick={() => navigate("/product", { state: { item } })}
