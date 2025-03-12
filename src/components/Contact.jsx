@@ -55,7 +55,7 @@ function Contact() {
                   </g>
                 </g>
               </svg>
-              <span className="text-sm">Cheppad,alappuzha.near alankod junction</span>
+              <span className="text-sm">Cheppad,kerala.near alankod junction</span>
             </div>
             <div className="flex items-center mt-3">
               <svg className="h-6 mr-2 " fill="currentColor" version="1.1" id="Capa_1"
@@ -93,7 +93,7 @@ function Contact() {
                   </path>
                 </g>
               </svg>
-              <span className="text-sm">+917592974639</span>
+              <span className="text-sm">+917592974637</span>
             </div>
             <div className="flex items-center mt-3">
               <svg className="h-6 mr-2 " fill="currentColor" version="1.1" id="Capa_1"
