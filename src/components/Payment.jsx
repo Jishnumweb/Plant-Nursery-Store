@@ -29,16 +29,17 @@ export default function Payment() {
           </svg>
         </span>
 
-        <div className="">
-          <strong className="block font-medium text-gray-900">Order Completed!</strong>
-
-          <p className="mt-1 text-sm text-gray-700">Thank you for your order. We have received your request and will process it shortly. You will receive updates via email/SMS.</p>
-        </div>
 
 
 
       </div>
-      <div className="flex items-center justify-center gap-2 mt-3">
+      
+      <div className="text-center">
+          <strong className="block font-medium text-gray-900">Order Completed!</strong>
+
+          <p className="mt-1 text-sm text-gray-700">Thank you for your order. We have received your request and will process it shortly. You will receive updates via email/SMS.</p>
+        </div>
+      <div className="flex items-center justify-center gap-2 mt-3 text-center">
           <a href="#" title="" className="inline-flex items-center gap-2 text-sm font-medium no-underline  hover:no-underline " onClick={() => navigate("/")}>
             Continue Shopping
             <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

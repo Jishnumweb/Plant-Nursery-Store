@@ -113,7 +113,7 @@ function Checkoutpage() {
 
       </div>
             : <div className='h-screen flex flex-col justify-center items-center text-[#eeeeee] container '>
-            <h2 className='lg:text-base text-[15px] text-center'>"Your cart is empty. Start adding your favorite items!"</h2>
+            <h2 className='lg:text-base text-[15px] text-center text-green-700'>"Your cart is empty. Start adding your favorite items!"</h2>
             <div className="flex items-center justify-center gap-2">
                     <a href="#" title="" className="inline-flex items-center gap-2  font-medium no-underline text-[13px]  hover:no-underline " onClick={() => navigate("/")}>
                       Continue Shopping

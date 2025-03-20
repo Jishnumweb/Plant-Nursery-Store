@@ -52,7 +52,7 @@ function OrderPage() {
         <div>
             {
                 show ? <Payment /> : <div className="leading-loose h-screen flex justify-center items-center">
-                    <form className="max-w-xl m-4 p-10 bg-white rounded shadow-xl">
+                    <form className="max-w-xl m-4 p-10 bg-white rounded shadow-xl mt-5">
                         <p className="text-gray-800 font-medium">Customer information</p>
 
                         <div>
